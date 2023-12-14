@@ -17,7 +17,7 @@ function comprarIngresso(quantidade, tipo) {
   );
 
   if (quantidade > quantidadeExibida) {
-    alert(`Quantidade ${quantidade} indisponível para o tipo ${tipo}!`);
+    alert(`Quantidade indisponível para o tipo ${tipo}!`);
   } else {
     quantidadeExibida = quantidadeExibida - quantidade;
     document.getElementById(`qtd-${tipo}`).textContent = quantidadeExibida;
